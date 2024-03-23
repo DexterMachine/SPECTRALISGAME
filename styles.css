@@ -568,6 +568,113 @@ img.spectralis {
   border-radius: 50%; /* Borde circular */
 }
 
+  /* Estilos específicos para pantallas de celular */   /* Estilos específicos para pantallas de celular */   /* Estilos específicos para pantallas de celular */   /* Estilos específicos para pantallas de celular */   /* Estilos específicos para pantallas de celular */
+
+@media only screen and (max-width: 768px) {
+  /* Estilos específicos para pantallas de celular */
+
+  /* Contenedor general */
+  .contenido-presale, #presale {
+    background-size: cover;
+    position: relative;
+  }
+
+  /* Título principal */
+  h1 {
+    font-size: 30px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+
+  /* Texto general */
+  p {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  /* Barra superior */
+  .header-bar {
+    display: none;
+  }
+
+  /* Menú hamburguesa */
+  #menuToggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+  }
+
+  #menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    z-index: 99;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  #menuToggle input:checked ~ #menu {
+    transform: translateX(0);
+  }
+
+  #menu li {
+    padding: 10px 0;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  /* Imagen Spectralis */
+  img.spectralis {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 300px;
+    top: 50px;
+  }
+
+  /* Botones */
+  .custom-btn {
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    padding: 5px 10px;
+  }
+
+  .btn-5 {
+    width: 200px;
+    height: 50px;
+    margin-right: 0;
+  }
+
+  .btn-6 {
+    width: 200px;
+    height: 50px;
+  }
+
+  .custom-btn-papi {
+    width: 200px;
+    height: 50px;
+    top: 400px;
+    right: -20px;
+    font-size: 20px;
+  }
+
+  /* Tarjetas */
+  .cards {
+    display: none;
+  }
+
+  /* Redes sociales */
+  .social-links {
+    display: none;
+  }
+}
+
 /* GAME */
 /* Sección del juego */
 
