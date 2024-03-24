@@ -208,12 +208,12 @@ p {
 img.spectralis {
   position: relative; /* Removed fixed positioning */
   margin: 0 auto; /* Center the image horizontally */
-  right: -204px;
+  left: 4%;
 }
 
 .custom-btn {
-  width: 10030px;
-  height: 30px;
+  width: 50%px;
+  height: 10%;
   color: #fff;
   border-radius: 5px;
   padding: 10px 5px;
@@ -273,8 +273,8 @@ img.spectralis {
 }
 
 .custom-btn-papi {
-  width: 280px;
-  height: 80px;
+  width: 100%;
+  height: 4%;
   color: #fff;
   border-radius: 5px;
   padding: 10px 25px;
@@ -289,8 +289,8 @@ img.spectralis {
     7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
   z-index: 16;
-  top: 940px;
-  right: -1160px;
+  top: 70%;
+  left: 470%;
   font-size: 30px;
   text-decoration: none;
 }
@@ -507,7 +507,18 @@ img.spectralis {
   left: 0;
   width: 100%;
 }
-  /* Estilos específicos para pantallas de celular */   /* Estilos específicos para pantallas de celular */   /* Estilos específicos para pantallas de celular */   /* Estilos específicos para pantallas de celular */   /* Estilos específicos para pantallas de celular */
+  
+
+
+
+
+
+
+
+/* max-width: 768px */ /* max-width: 768px */  /* max-width: 768px */  /* max-width: 768px */  /* max-width: 768px */  /* max-width: 768px */  /* max-width: 768px */  /* max-width: 768px */ 
+
+
+
 
 @media only screen and (max-width: 768px) {
   /* Estilos específicos para pantallas de celular */
@@ -526,7 +537,7 @@ img.spectralis {
     top: 0;
     left: 0;
     width: 100%;
-    height: 1024px; /* Altura específica de 1024px */
+    height: 100%; /* Altura específica de 1024px */
     display: flex;
     z-index: 1;
   }
@@ -779,8 +790,8 @@ img.spectralis {
   }
   
   .custom-btn-papi {
-    width: 280px;
-    height: 80px;
+    width:110%;
+    height: 3%;
     color: #fff;
     border-radius: 5px;
     padding: 10px 25px;
@@ -795,9 +806,9 @@ img.spectralis {
       7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
     outline: none;
     z-index: 16;
-    top: 940px;
-    right: -1160px;
-    font-size: 30px;
+    top: 75%;
+    right: -230%;
+    font-size: 10px;
     text-decoration: none;
   }
   
@@ -812,10 +823,9 @@ img.spectralis {
   }
   
   .btn-6 span {
+    margin-top: -15px;
     position: relative;
     display: block;
-    width: 100%;
-    height: 100%;
     text-align: center;
   }
   
@@ -865,11 +875,536 @@ img.spectralis {
   }
   
   /* Estilos para el contenedor de tarjetas */
+  .cards {
+    margin-left: 40%;
+    /* Tamaño de las tarjetas */
+    height: 40%;
+    width: 60%;
+    /* Fondo y borde de las tarjetas */
+    background: #000;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px 20px rgba(0, 0, 0, 0.17);
+    /* Alineación y perspectiva */
+    display: inline-block;
+    text-align: center;
+    /* Posicionamiento */
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    /* Tamaño mínimo */
+    min-width: auto;
+    /* Espaciado interno */
+    padding: 5px;
+  }
+  
+  /* Estilos para cada tarjeta individual */
+  .card {
+    /* Tamaño y margen */
+    height: 25%;
+    width: 80%;
+    margin: 10px;
+    /* Fondo, borde y sombra */
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.6);
+    /* Posicionamiento */
+    position: relative;
+    /* Transición suave */
+    transition: transform 200ms ease-out;
+    /* Alineación del contenido */
+    text-align: center;
+    /* Espaciado y margen */
+    padding: 10px;
+    margin-bottom: 0px;
+  }
+  
+  /* Estilos para las imágenes dentro de las tarjetas */
+  .card__img {
+    /* Posicionamiento */
+    position: relative;
+    /* Tamaño */
+    height: 100%;
+  }
+  
+  /* Estilos para el fondo de las tarjetas */
+  .card__bg {
+    /* Posicionamiento */
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    bottom: -50px;
+    left: -50px;
+    /* Apariencia y transformación */
+    background: url("https://i.ibb.co/s3PphsR/Vortice2.png") center / cover no-repeat;
+    /* Capa z */
+    z-index: 0;
+  }
+  
+  /* Estilos específicos para la primera tarjeta */
+  .card__one .card__img {
+    /* Posicionamiento */
+    top: 20px;
+    /* Tamaño */
+    height: 80%;
+  }
+  
+  /* Estilos específicos para la segunda tarjeta */
+  .card__two .card__img {
+    /* Posicionamiento */
+    top: 15px;
+    margin-left: -40px;
+    /* Tamaño */
+    height: 80%;
+  }
+  
+  /* Estilos específicos para la tercera tarjeta */
+  .card__three .card__img {
+    /* Posicionamiento */
+    top: 20px;
+    height: 100%;
+     
+  }
+  
+  /* Estilos para el texto dentro de las tarjetas */
+  .card__text {
+    font-family: Minecraft, monospace;
+    /* Posicionamiento */
+    position: absolute;
+    bottom: 0;
+    
+    /* Alineación y espaciado */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Tamaño */
+    height: 100px;
+    width: 100%;
+    /* Capa z */
+    z-index: 2;
+  }
+  
+  /* Estilos para el título del texto dentro de las tarjetas */
+  .card__title {
+    /* Apariencia y tamaño del texto */
+    font-family: Minecraft, monospace;
+    color: white;
+    font-size: 10px;
+    font-weight: 900;
+    padding: 0 10px;
+    margin-top: 80px;
+    margin-bottom: 3px;
+    justify-content: center;
+  
+  }
+
+
+
+  
+  .social-links {
+    transform: translateY(-50%); /* Centra verticalmente */
+    z-index: 20;
+    position: fixed;
+    top: 540px; /* Ajusta según la posición deseada */
+    display: flex;
+    flex-direction: column;
+    left: 40px;  /* Ajusta según la posición deseada */ 
+  }
+  
+  .social-link {
+    z-index: 20; 
+    margin-bottom: 30px; /* Elimina el margen inferior */
+    margin-right: 30px;  /* Ajusta según el espaciado deseado entre los enlaces */
+  }
+  
+  .social-link img {
+    top: -100px;
+    position: relative;
+    z-index: 20;
+    width: 30px; /* Ajusta según el tamaño deseado */
+    height: auto;
+    border: 3px solid white;
+    border-radius: 50%; /* Borde circular */
+  }
+  .jefes img {
+    z-index: 15;
+    position: absolute;
+    top: 85%;
+    left: 0;
+    width: 100%;
+  }
+
+
+  
+}
+
+
+
+/* max-width: 412px */ /* max-width: 412px */ /* max-width: 412px */ /* max-width: 412px */ /* max-width: 412px */ /* max-width: 412px */ /* max-width: 412px */ /* max-width: 412px */
+
+
+
+@media only screen and (max-width: 412px) {
+  /* Estilos específicos para pantallas de celular */
+
+  /* Contenedor general */
+  body {
+    background-color: #000;
+    
+  }
+  
+  .contenido-presale, #presale {
+    background-image: url(imagenes/FONDOPRESALE.png);
+    background-size: cover; /* Para que la imagen cubra todo el contenedor */
+    background-repeat: no-repeat; /* Para que la imagen no se repita */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 920px; /* Altura específica de 1024px */
+    display: flex;
+    z-index: 1;
+  }
+  
+  h1 {
+    font-family: Minecraft, monospace;
+    /* Gradient for background color */
+    background: linear-gradient(to right, #e91e63, #9b59b6);
+  
+    /* Apply gradient to text */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  
+    /* Blend text and background */
+    mix-blend-mode: difference;
+  
+    /* Rest of your styles */
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+    transform: translateZ(35px);
+    text-align: center;
+    line-height: 1.2; /* Ajuste el valor según sea necesario */
+  }
+  
+  p {
+    font-family: Minecraft, monospace;
+    font-weight: 300;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  /* Contenedor general para la barra superior */
+  
+  .header-bar {
+    display: flex; /* Convertirlo en un contenedor flexbox */
+    align-items: center; /* Alinear contenido verticalmente */
+    justify-content: space-between; /* Distribuir contenido horizontalmente con espacio entre elementos */
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo semitransparente */
+    padding: 1px 2px; /* Agregar algo de margen */
+    position: fixed; /* Fijar la barra en la parte superior de la página */
+    top: 0;
+    left: 0; /* Extender de izquierda a derecha */
+    width: 100%; /* Ocupar todo el ancho */
+    z-index: 17; /* Asegurar que esté encima de otros elementos */
+    backdrop-filter: blur(10px); /* Agregar un desenfoque */
+  }
+  
+  
+  /* Estilos del menú hamburguesa */
+  #menuToggle {
+    position: absolute;
+    top: 60%;
+    left: 10px;
+    transform: translateY(-50%);
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  
+  #menuToggle a {
+    text-decoration: none;
+    color: rgb(247, 247, 247);
+  
+    transition: color 0.3s ease;
+  }
+  
+  #menuToggle a:hover {
+    color: tomato;
+  }
+  
+  #menuToggle input {
+    display: block;
+    width: 10px;
+    height: 1px;
+    position: absolute;
+    top: -5px;
+    left: -4px;
+  
+    cursor: pointer;
+  
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+  
+    -webkit-touch-callout: none;
+  }
+  
+  /*
+   * Just a quick hamburger
+   */
+  #menuToggle span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin-bottom: 7px;
+    position: relative;
+  
+    background: rgb(255, 255, 255);
+    border-radius: 3px;
+  
+    z-index: 1;
+  
+    transform-origin: 4px 0px;
+  
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+  
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+  
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+    background: #ffffff;
+  }
+  
+  /* 
+   * Transform all the slices of hamburger
+   * into a crossmark.
+   */
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+  
+  /*
+   * But let's hide the middle one.
+   */
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  
+  /*
+   * Ohyeah and the last one should go the other direction
+   */
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  
+  /*
+   * Make this absolute positioned
+   * at the top left of the screen
+   */
+  
+  #menu {
+    position: absolute;
+    width: 50px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+  
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+  
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+  
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+  
+  #menu li {
+    padding: 10px 0;
+    font-size: 18px;
+  }
+  
+  /*
+   * And let's slide it in from the left
+   */
+  #menuToggle input:checked ~ ul {
+    transform: none;
+  }
+  
+  /* Add Spectralis image */
+  img.spectralis {
+   
+    position: relative; /* Removed fixed positioning */
+    margin: 0 auto; /* Center the image horizontally */
+    left: 10%;
+    width: 40%; /* Reducción del ancho de la imagen */
+    max-width: 200px; /* Establecer un ancho máximo */
+  }
+  
+  .custom-btn {
+    width: 2%;
+    height: 1%;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 5px;
+    font-family: Minecraft, monospace;
+    font-weight: 1000;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+      7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    outline: none;
+    line-height: 50px;
+    font-size: 10px;
+  }
+  
+  .btn-5 {
+    font-size: 10px;
+    width: 100px;
+    height: 30px;
+    line-height: 35px;
+    padding: 0;
+    border: none;
+    /* New gradient for initial look */
+    background: linear-gradient(to right, #d61455, #9c27b0);
+    margin-right: 10px;
+  }
+  
+  .btn-5:hover {
+    color: #f0094a;
+    background: transparent;
+    box-shadow: none;
+  }
+  
+  .btn-5:before,
+  .btn-5:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #ff02ff;
+    box-shadow: none; /* Remove box-shadow for cleaner look */
+    transition: 400ms ease all;
+  }
+  
+  .btn-5:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+  }
+  
+  .btn-5:hover:before,
+  .btn-5:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+  }
+  
+  .custom-btn-papi {
+    left: 190%;
+    width: 150%;
+    height: 3%;
+    color: #fff;
+    border-radius: 4px;
+    padding: 0px 0px;
+    font-family: Minecraft, monospace;
+    font-weight: 100px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+      7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    outline: none;
+    z-index: 100;
+    top: 80%;
+    font-size: 10px;
+    text-decoration: none;
+  }
+  
+  .btn-6 {
+    background: rgb(247, 150, 192);
+    background: radial-gradient(
+      circle,
+      rgba(247, 150, 192, 1) 0%,
+      rgba(118, 174, 241, 1) 100%
+    );
+    line-height: 58px;
+  }
+  
+  .btn-6 span {
+    top: 0px;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 10p;
+    text-align: center;
+  }
+  
+  .btn-6:before,
+  .btn-6:after {
+    position: absolute;
+    content: "";
+    height: 50%;
+    width: 1px;
+    box-shadow: none;
+  }
+  
+  .btn-6:hover {
+    background: linear-gradient(
+      to bottom,
+      rgba(80, 76, 159, 0.8),
+      rgba(230, 25, 75, 0.8),
+      rgba(255, 105, 180, 0.8)
+    );
+    color: #fff;
+    box-shadow: none;
+  }
+  
+  .btn-6:hover:before {
+    transition: all 500ms ease;
+    height: 80%;
+  }
+  
+  .btn-6:hover:after {
+    transition: all 500ms ease;
+    height: 80%;
+  }
+  
+  .btn-6 span:before,
+  .btn-6 span:after {
+    position: absolute;
+    content: "";
+    box-shadow: none;
+  }
+  
+  .btn-6 span:hover:before {
+    width: 100%;
+  }
+  
+  .btn-6 span:hover:after {
+    width: 100%;
+  }
+  
+  /* Estilos para el contenedor de tarjetas */
 .cards {
-  margin-left: 90px;
+  margin-left: 45%;
   /* Tamaño de las tarjetas */
-  height: 500px;
-  width: 400px;
+  height: 50%;
+  width: 70%;
   /* Fondo y borde de las tarjetas */
   background: #000;
   border-radius: 15px;
@@ -879,8 +1414,7 @@ img.spectralis {
   text-align: center;
   /* Posicionamiento */
   position: absolute;
-  top: 25%;
-  left: 10%;
+  top: 50%;
   transform: translate(-50%, -50%);
   /* Tamaño mínimo */
   min-width: auto;
@@ -891,9 +1425,9 @@ img.spectralis {
 /* Estilos para cada tarjeta individual */
 .card {
   /* Tamaño y margen */
-  height: 25%;
+  height: 20%;
   width: 80%;
-  margin: 10px;
+  margin: 8px;
   /* Fondo, borde y sombra */
   border-radius: 15px;
   box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.6);
@@ -913,7 +1447,7 @@ img.spectralis {
   /* Posicionamiento */
   position: relative;
   /* Tamaño */
-  height: 100%;
+  height: 90%;
 }
 
 /* Estilos para el fondo de las tarjetas */
@@ -933,7 +1467,7 @@ img.spectralis {
 /* Estilos específicos para la primera tarjeta */
 .card__one .card__img {
   /* Posicionamiento */
-  top: 20px;
+  top: 8px;
   /* Tamaño */
   height: 80%;
 }
@@ -941,8 +1475,8 @@ img.spectralis {
 /* Estilos específicos para la segunda tarjeta */
 .card__two .card__img {
   /* Posicionamiento */
-  top: 15px;
-  margin-left: -40px;
+  top: 7px;
+  margin-left: -20px;
   /* Tamaño */
   height: 80%;
 }
@@ -950,8 +1484,8 @@ img.spectralis {
 /* Estilos específicos para la tercera tarjeta */
 .card__three .card__img {
   /* Posicionamiento */
-  top: 20px;
-  height: 100%;
+  top: 6px;
+  height: 80%;
    
 }
 
@@ -994,7 +1528,7 @@ img.spectralis {
     top: 540px; /* Ajusta según la posición deseada */
     display: flex;
     flex-direction: column;
-    left: 40px;  /* Ajusta según la posición deseada */ 
+    left: 10px;  /* Ajusta según la posición deseada */ 
   }
   
   .social-link {
@@ -1018,11 +1552,11 @@ img.spectralis {
     top: 800px;
     left: 0;
     width: 100%;
-  }
-
-
-  
+  } 
 }
+
+
+
 
 /* GAME */
 /* Sección del juego */
@@ -1046,8 +1580,8 @@ img.spectralis {
 
 
 .game-image-informacion {
-  margin-right: 300px;
-  margin-top: 20px;
+  margin-right: 11%;
+  margin-top: -11%;
   float: right;
   width: 9%;
   height: 40%;
@@ -1060,8 +1594,8 @@ img.spectralis {
 
 
 .holo-zenia {
-  top: 830px;
-  right: 340px;
+  top: 13%;
+  left: 82%;
   float: right;
   position: absolute;
   z-index: 2;
@@ -1415,8 +1949,8 @@ img.spectralis {
 
 
 .teleport-pet-gato1 {
-  margin-left: 110px;
-  top: 5679px;
+  margin-left: 4.2%;
+  top: 98%;
   float: left;
   position: absolute;
   z-index: 2;
@@ -1475,8 +2009,8 @@ img.spectralis {
 
 
 .teleport-pet-gato2 {
-  top: 5670px;
-  right: 120px;
+  top: 98%;
+  right: 4.5%;
   float: right;
   position: absolute;
   z-index: 2;
@@ -1578,6 +2112,15 @@ img.spectralis {
   font-family: Minecraft, monospace;
 }
 
+
+
+
+/* max-width: 768px */ /* max-width: 768px */ /* max-width: 768px */ /* max-width: 768px *//* max-width: 768px */ /* max-width: 768px */ /* max-width: 768px */ /* max-width: 768px */ /* max-width: 768px */
+
+
+
+
+
 @media only screen and (max-width: 768px) {
   /* Estilos específicos para pantallas de celular */
   #game {
@@ -1587,7 +2130,7 @@ img.spectralis {
     position: relative;
     background: #000000;
     padding: 50px 0;
-    margin-top: 800px;
+    margin-top: 150%;
     width: 100%;
     height: 100%;
     background-size: cover; /* Ajusta la imagen para cubrir el fondo */
@@ -1600,10 +2143,10 @@ img.spectralis {
   
   
   .game-image-informacion {
-    
-    margin-right: 42px;
+    margin-top: 5%;
+    margin-right: 35%;
     float: right;
-    width: 9%;
+    width: 30%;
     height: 10%;
     background-repeat: no-repeat;
     animation: float 1s infinite alternate; 
@@ -1614,12 +2157,12 @@ img.spectralis {
   
   
   .holo-zenia {
-    top: 570px;
-    right: 50px;
+    top: 17%;
+    right: 35%;
     float: right;
     position: absolute;
     z-index: 2;
-    width: 50px;
+    width: 30%;
     height: 1px;
     background-color: rgb(255, 20, 147);
     border-radius: 100%;
@@ -1712,7 +2255,7 @@ img.spectralis {
  /* LAND */
   
  .game-section-land {
-  margin-top: 60px;
+  margin-top: 40%;
   display: flex; /* Permite que el video y el texto estén uno al lado del otro */
   margin-bottom: 100px;
   padding: 20px;
@@ -1990,8 +2533,8 @@ img.spectralis {
   
   
   .teleport-pet-gato1 {
-    margin-left: 30px;
-    top: 5040px;
+    margin-left: 4.4%;
+    top: 98.8%;
     float: left;
     position: absolute;
     z-index: 2;
@@ -2041,12 +2584,12 @@ img.spectralis {
   
   
   .teleport-pet-gato2 {
-    top: 5040px;
-    right: 30px;
+    top: 98.8%;
+    right: 4%;
     float: right;
     position: absolute;
     z-index: 2;
-    width: 40px;
+    width: 5%;
     height: 5px;
     background-color: rgb(255, 20, 147);
     border-radius: 100%;
@@ -2147,35 +2690,615 @@ img.spectralis {
 }
 
 
-/* IMAGENES */ /* IMAGENES */ /* IMAGENES *//* IMAGENES */ /* IMAGENES */ /* IMAGENES */ /* IMAGENES */ /* IMAGENES */ /* IMAGENES */ /* IMAGENES */
+
+
+
+/* 412p */ /* 412p */ /* 412p */ /* 412p */ /* 412p */ /* 412p */
+ 
+
+
+
+
+@media only screen and (max-width: 412px) {
+
+  #game {
+    
+    overflow: hidden; /* Oculta el borde blanco */
+    padding-bottom: 50px;
+    position: relative;
+    background: #000000;
+    padding: 50px 0;
+    margin-top: 600px;
+    width: 100%;
+    height: 100%;
+    background-size: cover; /* Ajusta la imagen para cubrir el fondo */
+    background-position: center ; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+  }
+  
+  
+  /* INFO GAME */ /* INFO GAME */ /* INFO GAME */ /* INFO GAME */ /* INFO GAME */ /* INFO GAME */ /* INFO GAME */ /* INFO GAME */ /* INFO GAME */ /* INFO GAME */ /* INFO GAME */ /* INFO GAME */
+  
+  
+  .game-image-informacion {
+    margin-top: 50px;
+    margin-right: 37%;
+    float: right;
+    width: 24%;
+    height: 20%;
+    background-repeat: no-repeat;
+    animation: float 1s infinite alternate; 
+    z-index: 100;
+  }
+  
+  
+  
+  
+  .holo-zenia {
+    top: 13%;
+    left: 41%;
+    float: center;
+    position: absolute;
+    z-index: 2;
+    width: 20%;
+    height: 1px;
+    background-color: rgb(255, 20, 147);
+    border-radius: 100%;
+    filter: blur(2.5px);
+    transform: perspective(100px) rotateX(-30deg);
+    transform-style: preserve-3d;
+    animation: holographic-holo-zenia 1.5s infinite alternate;
+    backface-visibility: hidden;
+  }
+  
+  .holo-zenia:after {
+    position: absolute;
+    left: -10px;
+    right: -10px;
+    content: "";
+    height: 10px;
+    background-color: rgb(255, 20, 147);
+    border-radius: 100%;
+    filter: blur(2.5px);
+  }
+  
+  .holo-zenia + .holo-zenia {
+    animation-duration: 0.75s;
+    opacity: 0.5;
+  }
+  
+  @keyframes float {
+    from {
+      will-change: unset;
+      transform: translateY(-10px);
+    }
+    to {
+      will-change: transform;
+      transform: translateY(-30px);
+    }
+  }
+  
+  @keyframes holographic-holo-zenia {
+    from {
+      will-change: box-shadow;
+      box-shadow: 0 -75px 5px rgb(255, 20, 147), 0 -1px 2px rgb(255, 20, 147),
+                  0 -45px 5px rgb(255, 20, 147), 0 -2px 3px rgb(255, 20, 147),
+                  0 -3px 4px rgb(255, 20, 147), 0 -4px 6px rgb(255, 20, 147),
+                  0 -5px 10px rgb(255, 20, 147), 0 -7px 20px rgb(255, 20, 147),
+                  0 -10px 30px rgb(255, 20, 147), 0 -15px 40px rgb(255, 20, 147),
+                  0 -25px 50px rgb(255, 20, 147), 0 -35px 60px rgb(255, 20, 147),
+                  0 -45px 70px rgb(255, 20, 147), 0 -65px 80px rgb(255, 20, 147),
+                  0 -75px 90px rgb(255, 20, 147);
+    }
+    to {
+      will-change: unset;
+      box-shadow: 0 -1px 5px rgb(255, 20, 147), 0 -1px 2px rgb(255, 20, 147),
+                  0 -1px 5px rgb(255, 20, 147), 0 -2px 3px rgb(255, 20, 147),
+                  0 -3px 4px rgb(255, 20, 147), 0 -4px 6px rgb(255, 20, 147),
+                  0 -5px 7px rgb(255, 20, 147), 0 -7px 10px rgb(255, 20, 147),
+                  0 -10px 15px rgb(255, 20, 147), 0 -15px 20px rgb(255, 20, 147),
+                  0 -25px 25px rgb(255, 20, 147), 0 -35px 30px rgb(255, 20, 147),
+                  0 -45px 35px rgb(255, 20, 147), 0 -65px 40px rgb(255, 20, 147),
+        0 -75px 50px rgb(255, 20, 147);
+    }
+  }
+  
+  
+  
+  .game-info-informacion {
+    flex: 1; /* Permite que el texto ocupe el espacio restante */
+    text-align: center;
+    margin-top: 440px;
+    margin-right: 70%;
+    margin-left: 15%;
+    width: 75%;
+  }
+  
+  .game-info-informacion h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(255, 20, 147);
+    font-family: Minecraft, monospace;
+    
+  }
+  
+  .game-info-informacion p {
+    font-size: 6px;
+    line-height: 1.5;
+    color: white;
+    font-family: Minecraft, monospace;
+  }
+  
+ /* LAND */
+  
+ .game-section-land {
+  margin-top: 200px;
+  display: flex; /* Permite que el video y el texto estén uno al lado del otro */
+  margin-bottom: 100px;
+  padding: 20px;
+  border-radius: 10px;
+  align-items: center;
+  flex-direction: column; /* Cambia la dirección del flexbox a columna */
+}
+
+/* GIF */
+
+.gif-land {
+  margin-top: 100px;
+  width: 80%; /* Ajusta el ancho del video según el diseño de la imagen */
+  height: auto; /* Se ajustará automáticamente según el ancho especificado */
+  margin-right: 50px; /* Espacio entre el video y el texto */
+  border: 10px solid rgb(255, 20, 147);
+  margin-left: 50px;
+}
+
+/* Información */
+
+.game-info-land {
+  flex: 1; /* Permite que el texto ocupe el espacio restante */
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 30px;
+  width: 80%;
+}
+
+.game-info-land h2 {
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: rgb(255, 20, 147);
+  font-family: Minecraft, monospace;
+}
+
+.game-info-land p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: white;
+  font-family: Minecraft, monospace;
+}
+
+
+
+  
+  /* Secciones */
+  
+  .game-section-clan {
+    margin-top: 0px;
+    display: flex; /* Permite que el video y el texto estén uno al lado del otro */
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    flex-direction: column; /* Cambia la dirección del flexbox a columna */
+  }
+  
+  /* Video */
+  
+  .gif-clan {
+    margin-left: 100px;
+    margin-top: 30px;
+    width: 80%; /* Ajusta el ancho del video según el diseño de la imagen */
+    height: auto; /* Se ajustará automáticamente según el ancho especificado */
+    margin-right: 100px; /* Espacio entre el video y el texto */
+    border: 10px solid rgb(255, 20, 147);
+  }
+  
+  /* Información */
+  
+  .game-info-clan {
+    flex: 1; /* Permite que el texto ocupe el espacio restante */
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 100px;
+    width: 80%;
+    margin-bottom: 30px;
+  }
+  
+  .game-info-clan h2 {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(255, 20, 147);
+    font-family: Minecraft, monospace;
+    text-align: center;
+  }
+  
+  .game-info-clan p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+    font-family: Minecraft, monospace;
+  }
+  
+ 
+  
+  /* PERSONAJE */ /* PERSONAJE */ /* PERSONAJE */ /* PERSONAJE */ /* PERSONAJE */ /* PERSONAJE */
+  
+  /* Secciones */
+  
+/* Sección Personaje */
+.game-section-rubia {
+ 
+  display: flex; /* Permite que la imagen y el texto estén uno al lado del otro */
+  margin-bottom: 0px;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0px;
+  flex-direction: column;
+  
+}
+
+/* Imagen */
+
+.game-image-rubia {
+  
+  margin-left: 15%;
+  transform: rotate(0deg);
+  width: 80%;;
+  margin-right: 0px;
+  /* Ajusta el borde y el color */
+  border: solid 10px rgb(255, 20, 147); /* Ajusta el grosor como desees */
+}
+
+.game-info-rubia {
+  flex: 1; /* Permite que el texto ocupe el espacio restante */
+  text-align: center;
+  margin-top: -120px;
+  width: 80%;
+  margin-left: 15%;
+  margin-bottom: 100px;
+}
+
+.game-info-rubia h2 {
+  margin-top: 0px;
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: rgb(255, 20, 147);
+  font-family: Minecraft, monospace;
+}
+
+.game-info-rubia p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: white;
+  font-family: Minecraft, monospace;
+  margin-bottom: 100px;
+}
+
+  /* Ajustes para pantallas pequeñas */
+  
+  /* CHAT */ /* CHAT */ /* CHAT */ /* CHAT */ /* CHAT */ /* CHAT */ /* CHAT */ /* CHAT */ /* CHAT */
+  
+  /* Secciones */
+  
+  .game-section-chat {
+    top: 100px;
+    display: flex; /* Permite que la imagen y el texto estén uno al lado del otro */
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px;
+    flex-direction: column;
+    
+  }
+  
+  /* Imagen */
+  
+  .game-image-chat {
+    
+    margin-left: 5%;
+    transform: rotate(0deg);
+    width: 100%;;
+    /* Ajusta el borde y el color */
+    border: solid 10px rgb(255, 20, 147); /* Ajusta el grosor como desees */
+  }
+  
+  .game-info-chat {
+    flex: 1; /* Permite que el texto ocupe el espacio restante */
+    text-align: center;
+    margin-top: 10px;
+    width: 80%;
+    margin-left: 15%;
+    margin-bottom: 0px;
+  }
+  
+  .game-info-chat h2 {
+    margin-top: 20px;
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(255, 20, 147);
+    font-family: Minecraft, monospace;
+  }
+  
+  .game-info-chat p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+    font-family: Minecraft, monospace;
+  }
+  
+  /* Ajustes para pantallas pequeñas */
+  
+  /* Secciones */
+
+
+  
+  .game-section-marketplace {
+    top: -150px;
+    display: flex; /* Permite que la imagen y el texto estén uno al lado del otro */
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px;
+    flex-direction: column;
+    
+  }
+  
+  /* Imagen */
+  
+  .game-image-marketplace {
+    
+    margin-left: 5%;
+    transform: rotate(0deg);
+    width: 100%;;
+    /* Ajusta el borde y el color */
+    border: solid 10px rgb(255, 20, 147); /* Ajusta el grosor como desees */
+  }
+  
+  .game-info-marketplace {
+    text-align: center;
+    flex: 1; /* Permite que el texto ocupe el espacio restante */
+    margin-top: -140px;
+    width: 80%;
+    margin-left: 5%;
+  }
+  
+  .game-info-marketplace h2 {
+    margin-top: 20px;
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(255, 20, 147);
+    font-family: Minecraft, monospace;
+  }
+  
+  .game-info-marketplace p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+    font-family: Minecraft, monospace;
+    margin-bottom: 100px;
+  }
+  
+  
+  .game-image-pet-gato1 {
+    margin-left: 3%px;
+    margin-top: 40px;
+    float: left;
+    width: 6%;
+    height: 40%;
+    background-repeat: no-repeat;
+    animation: float 1s infinite alternate; 
+    z-index: 100;
+  }
+   
+  
+  
+  .teleport-pet-gato1 {
+    margin-left: 9.7%;
+    top: 97.4%;
+    float: left;
+    position: absolute;
+    z-index: 2;
+    width: 3%;
+    height: 2px;
+    background-color: rgb(255, 20, 147);
+    border-radius: 100%;
+    filter: blur(2.5px);
+    transform: perspective(100px) rotateX(-30deg);
+    transform-style: preserve-3d;
+    animation: holographic 1.5s infinite alternate;
+    backface-visibility: hidden;
+  }
+  
+  .teleport-pet-gato1:after {
+    position: absolute;
+    left: -10px;
+    right: -10px;
+    content: "";
+    height: 10px;
+    background-color: rgb(255, 20, 147);
+    border-radius: 100%;
+    filter: blur(2.5px);
+  }
+  
+  .teleport-pet-gato1 + .teleport-pet-gato1 {
+    animation-duration: 0.75s;
+    opacity: 0.5;
+  }
+  
+
+  
+  
+  
+  
+  .game-image-pet-gato2 {
+    margin-right: 26px;
+    margin-top: 30px;
+    float: right;
+    width: 6%;
+    background-repeat: no-repeat;
+    animation: float 1s infinite alternate; 
+    z-index: 100;
+  }
+  
+   
+  
+  
+  .teleport-pet-gato2 {
+    top: 97.4%;
+    right: 7%;
+    float: right;
+    position: absolute;
+    z-index: 2;
+    width: 5%;
+    height: 3px;
+    background-color: rgb(255, 20, 147);
+    border-radius: 100%;
+    filter: blur(2.5px);
+    transform: perspective(100px) rotateX(-30deg);
+    transform-style: preserve-3d;
+    animation: holographic 1.5s infinite alternate;
+    backface-visibility: hidden;
+  }
+  
+  .teleport-pet-gato2:after {
+    position: absolute;
+    left: -10px;
+    right: -10px;
+    content: "";
+    height: 5px;
+    background-color: rgb(255, 20, 147);
+    border-radius: 100%;
+    filter: blur(2.5px);
+  }
+  
+  .teleport-pet-gato2 + .teleport-pet-gato2 {
+    animation-duration: 0.75s;
+    opacity: 0.5;
+  }
+  
+  @keyframes float {
+    from {
+      will-change: unset;
+      transform: translateY(-10px);
+    }
+    to {
+      will-change: transform;
+      transform: translateY(-30px);
+    }
+  }
+  
+  @keyframes holographic {
+    from {
+      will-change: box-shadow;
+      box-shadow: 0 -75px 5px rgb(255, 20, 147), 0 -1px 2px rgb(255, 20, 147),
+                  0 -45px 5px rgb(255, 20, 147), 0 -2px 3px rgb(255, 20, 147),
+                  0 -3px 4px rgb(255, 20, 147), 0 -4px 6px rgb(255, 20, 147),
+                  0 -5px 10px rgb(255, 20, 147), 0 -7px 20px rgb(255, 20, 147),
+                  0 -10px 30px rgb(255, 20, 147), 0 -15px 40px rgb(255, 20, 147),
+                  0 -25px 50px rgb(255, 20, 147), 0 -35px 60px rgb(255, 20, 147),
+                  0 -45px 70px rgb(255, 20, 147), 0 -65px 80px rgb(255, 20, 147),
+                  0 -75px 90px rgb(255, 20, 147);
+    }
+    to {
+      will-change: unset;
+      box-shadow: 0 -1px 5px rgb(255, 20, 147), 0 -1px 2px rgb(255, 20, 147),
+                  0 -1px 5px rgb(255, 20, 147), 0 -2px 3px rgb(255, 20, 147),
+                  0 -3px 4px rgb(255, 20, 147), 0 -4px 6px rgb(255, 20, 147),
+                  0 -5px 7px rgb(255, 20, 147), 0 -7px 10px rgb(255, 20, 147),
+                  0 -10px 15px rgb(255, 20, 147), 0 -15px 20px rgb(255, 20, 147),
+                  0 -25px 25px rgb(255, 20, 147), 0 -35px 30px rgb(255, 20, 147),
+                  0 -45px 35px rgb(255, 20, 147), 0 -65px 40px rgb(255, 20, 147),
+        0 -75px 50px rgb(255, 20, 147);
+    }
+  }
+  
+  
+  
+  .game-info-pet {
+    flex: 1; /* Permite que el texto ocupe el espacio restante */
+    text-align: center;
+    margin-left: 15%;
+    margin-top: 200px;
+    margin-bottom: 0px;
+    width: 70%;
+  }
+  
+  .game-info-pet h2 {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(255, 20, 147);
+    font-family: Minecraft, monospace;
+    text-align: center;
+    /* Utilizamos text-shadow para simular un borde amarillo alrededor del texto */
+    text-shadow: 
+      -2px -1px 0 white,  
+       2px -1px 0 white,
+      -2px  1px 0 white,
+       2px  1px 0 white;
+  }
+  
+  
+  
+  .game-info-pet p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+    font-family: Minecraft, monospace;
+  }
+}
+
+
+
+
+
+ /* IMAGENES */ /* IMAGENES *//* IMAGENES */ /* IMAGENES */ /* IMAGENES */ /* IMAGENES */ /* IMAGENES */ /* IMAGENES */ /* IMAGENES */ */ /* IMAGENES */ /* IMAGENES *//* IMAGENES */ /* IMAGENES */ /* IMAGENES */ /* IMAGENES */ /* IMAGENES */ /* IMAGENES */ /* IMAGENES */
 
 
 /* Estilos CSS para centrar el texto y la imagen */
 #imageneszenia {
-  top: 30%;
-  margin: 100px;
-  margin-top: 100px;
-  margin-left: 210px;
+  
+  margin: 0px;
+  margin-left: 40%;
   display: flex;
-  justify-content: left;
-  height: 100vh; /* Establece la altura del contenedor */
+  justify-content: center;
+  
 }
 
 .imageneszenia-section {
   position: relative;
   display: inline-block;
+  width: 200%;
 }
 
 .image-container {
-  
- 
+  margin-top: 5%;
+  margin-right: 0%;
+  margin-left: 0%;
   position: relative;
   display: inline-block;
 }
 .text-container {
-
+  text-align: center;
   position: absolute;
-  top: 0%; /* Posiciona el texto en la mitad superior */
+  top: 10%; /* Posiciona el texto en la mitad superior */
   margin-left: 0;
   transform: translate(-50%, -50%); /* Ajusta la posición del texto */
   z-index: 1; /* Posiciona el texto sobre la imagen */
@@ -2183,12 +3306,14 @@ img.spectralis {
   border-radius: 10px;
 }
 .coming-soon {
+  text-align: center;
+  width: 100%;
+  margin-left: 335%;
   margin-bottom: 100px;
   font-size: 60px;
   z-index: 100;
   position: relative;
-  top: 0%;
-  left: 1300px; /* Ajusta la posición si es necesario */
+  margin-top: 30%;
   transform: translate(-50%, -50%);
   /* Propiedades adicionales para el texto */
   color: transparent; /* Elimina el color de texto original */
@@ -2199,10 +3324,13 @@ img.spectralis {
 }
 
 .merch {
-  max-width: 100%;
+  margin-top: 30%;
+  max-width: 300%;
   max-height: 100%;
   display: block;
   margin: auto;
+  margin-left: 20%;
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -2213,31 +3341,30 @@ img.spectralis {
 /* Estilos CSS para centrar el texto y la imagen */
 #imageneszenia {
   
-  margin-top: 300px;
-  margin-left: 50px;
+  margin-top: 70%;
+  margin-left: 10%;
   display: flex;
   justify-content: left;
   height: 100vh; /* Establece la altura del contenedor */
 }
 
 .imageneszenia-section {
-  top: 100px;
+  top: 5%;
   position: relative;
   display: inline-block;
 }
 
 .image-container {
   
-  height: 800px;
+  height: 40%;
   position: relative;
   display: inline-block;
 }
 .text-container {
-
+text-align: center;
   position: absolute;
-  top: 0%; /* Posiciona el texto en la mitad superior */
-  margin-left: 0;
-  transform: translate(-50%, -50%); /* Ajusta la posición del texto */
+  top: -20%; /* Posiciona el texto en la mitad superior */
+  margin-left: 10%;
   z-index: 1; /* Posiciona el texto sobre la imagen */
   padding: 20px;
   border-radius: 10px;
@@ -2247,7 +3374,7 @@ img.spectralis {
   font-size: 34px;
   z-index: 100;
   position: relative;
-  top: 0%;
+  top: -20%;
   left: 480px; /* Ajusta la posición si es necesario */
   transform: translate(-50%, -50%);
   /* Propiedades adicionales para el texto */
@@ -2268,159 +3395,119 @@ img.spectralis {
   
 }
 
+
+@media only screen and (max-width: 412px) {
+
+ /* IMAGENES */ /* IMAGENES */ /* IMAGENES *//* IMAGENES */ /* IMAGENES */ /* IMAGENES */ /* IMAGENES */ /* IMAGENES */ /* IMAGENES */ /* IMAGENES */
+
+
+/* Estilos CSS para centrar el texto y la imagen */
+#imageneszenia {
+  margin-right: 5%;
+  margin-top: 10%;
+  margin-left: 3%;
+  display: flex;
+  justify-content: left;
+  height: 100vh; /* Establece la altura del contenedor */
+}
+
+.imageneszenia-section {
+  
+  position: relative;
+  display: inline-block;
+}
+
+.image-container {
+  
+  height: 40%;
+  position: relative;
+  display: inline-block;
+}
+.text-container {
+  text-align: center;
+  position: absolute;
+  top: -20%; /* Posiciona el texto en la mitad superior */
+  margin-left: 10%;
+  z-index: 1; /* Posiciona el texto sobre la imagen */
+  padding: 20px;
+  border-radius: 10px;
+}
+.coming-soon {
+  margin-bottom: 0px;
+  font-size: 14px;
+  z-index: 100;
+  position: relative;
+  margin-top: 500%;
+  left: -150%; /* Ajusta la posición si es necesario */
+  transform: translate(-50%, -50%);
+  /* Propiedades adicionales para el texto */
+  color: transparent; /* Elimina el color de texto original */
+  -webkit-text-fill-color: transparent; /* Compatibilidad con navegadores webkit */
+  text-shadow: 
+    -1px -1px 0 #ff2093, /* Sombra interna rosa fuerte */
+     1px 1px 0 #00bcd4; /* Sombra interna azul celeste */
+}
+
+.merch {
+  margin-top: 30%;
+  width: 100%;
+  height: 40%;
+  display: block;
+  margin: auto;
+}
+
+}
 /* TOKEN */ /* TOKEN */ /* TOKEN */ /* TOKEN *//* TOKEN */ /* TOKEN */ /* TOKEN */ /* TOKEN */
 
- 
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+#token {
+  height: 100%;
+  width: 100%;
+  margin-top: 20%;
 }
 
-body {
-  font-family: Minecraft, monospace;
-  
-}
-
-.slider-pages {
-  overflow: hidden;
+.imagenestokeninfo {
+  width: 100%;
+  height: 100%;
+  top: 5%;
   position: relative;
-  height: 100vh;
 }
 
-.slider-page {
-  position: absolute;
-  top: 0;
-  width: 50%;
-  height: 100vh;
-  transition: transform 1350ms;
+.image-token-container {
+  height: 100%; /* Corregido: establecer la altura al 100% */
+  position: relative;
 }
 
-.slider-page--skew {
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  width: 140%;
-  height: 100%;
-  background: #282828;
-  transform: skewX(-18deg);
-}
-
-.slider-page--left {
-  left: 0;
-  transform: translateX(-32.5vh) translateY(100%) translateZ(0);
-}
-.slider-page--left .slider-page--skew {
-  left: -50%;
-}
-.slider-page--left .slider-page__content {
-  padding: auto 30% auto 30%;
-  transform-origin: 100% 0;
-}
-
-.slider-page--right {
-  left: 50%;
-  transform: translateX(32.5vh) translateY(-100%) translateZ(0);
-}
-.slider-page--right .slider-page--skew {
-  right: -40%;
-}
-.slider-page--right .slider-page__content {
-  padding: auto 30% auto 30%;
-  transform-origin: 0 100%;
-}
-
-.slider-page__content {
- transform: translateX(200px);
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column wrap;
-  top: 0;
-  left: 0;
+.token-info {
   width: 100%;
-  height: 100%;
-  padding: 0 30% 0 30%;
-  color: #ffffff;
-  background-size: cover;
-  transform: skewX(18deg);
-  transition: transform 1350ms;
+  height: auto; /* Corregido: establecer la altura máxima al 100% */
+  margin: 0;
 }
 
-.slider-page__title {
-  font-family: Minecraft, monospace;
-  margin-bottom: 3em;
-  font-size: 4em;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.slider-page__title--big {
-  font-family: Minecraft, monospace;
-  font-size: 4em;
-}
-
-.slider-page__description {
-  font-family: Minecraft, monospace;
-  font-size: 3em;
-  text-align: center;
-}
-
-.slider-page__link {
-  color: #80a1c1;
-}
-.slider-page__link:hover, .slider-page__link:focus {
-  color: #6386a9;
-  text-decoration: none;
-}
-
-/***********************
- * Project JS Styles
- **********************/
-.js-scrolling__page {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-.js-scrolling--active .slider-page {
-  transform: translateX(0) translateY(0) translateZ(0);
-}
-
-.js-scrolling--inactive .slider-page__content {
-  transform: skewX(18deg) scale(0.9);
-}
-
-.js-scrolling__page-1 .slider-page--left .slider-page__content {
-  background-image: url("imagenes/ZENIA_GALAXIA.png");
+@media only screen and (max-width: 412px) {
+  #token {
+    height: 100%;
+    width: 100%;
+    margin-top: -260%;
+  }
   
-}
-.js-scrolling__page-1 .slider-page--right .slider-page__content {
-  background-color: #000000;
+  .imagenestokeninfo {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .image-token-container {
+    height: 100%; /* Corregido: establecer la altura al 100% */
+    position: relative;
+  }
+  
+  .token-info {
+    width: 100%;
+    height: auto; /* Corregido: establecer la altura máxima al 100% */
+    margin: 0;
+  }
 }
 
-.js-scrolling__page-2 .slider-page--left .slider-page__content {
-  background-color: #e2e2e2;
-}
-.js-scrolling__page-2 .slider-page--left .slider-page__title,
-.js-scrolling__page-2 .slider-page--left .slider-page__description {
-  color: #000000;
-}
-.js-scrolling__page-2 .slider-page--right .slider-page__content {
-  background-image: url("imagenes/CARTEL_TO_THE_MOON.png");
-}
-
-.js-scrolling__page-3 .slider-page--left .slider-page__content {
-  background-image: url("imagenes/LISTADOS.png");
-}
-.js-scrolling__page-3 .slider-page--right .slider-page__content {
-  background-color: #000000;
-}
 
 
 .piedepagina {
@@ -2429,165 +3516,22 @@ body {
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 412px) {
   /* Estilos específicos para pantallas de celular */
 /* TOKEN */ /* TOKEN */ /* TOKEN */ /* TOKEN *//* TOKEN */ /* TOKEN */ /* TOKEN */ /* TOKEN */
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
-body {
-  font-family: Minecraft, monospace;
-  
-}
-
-.slider-pages {
-  
-  position: relative;
-  height: 400px;
-  top: -300px;
-  
- 
-  
-}
-
-.slider-page {
-  position: absolute;
-  top: 0;
-  width: 70%;
-  height: 800px;
-  transition: transform 1350ms;
-}
-
-.slider-page--skew {
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  width: 163%;
-  height: 100%;
-  background: #282828;
-  transform: skewX(-18deg);
-}
-
-.slider-page--left {
-  left: 270px;
-  transform: translateX(-50%) translateY(100%) translateZ(0);
-}
-.slider-page--left .slider-page--skew {
-  left: -100%;
-}
-.slider-page--left .slider-page__content {
-  padding: auto 10% auto 10%;
-  transform-origin: 100% 0;
-}
-
-.slider-page--right {
-  left: 50%;
-  transform: translateX(32.5vh) translateY(-100%) translateZ(0);
-}
-.slider-page--right .slider-page--skew {
-  right: -40%;
-}
-.slider-page--right .slider-page__content {
-  padding: auto 30% auto 30%;
-  transform-origin: 0 100%;
-}
-
-.slider-page__content {
- transform: translateX(200px);
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column wrap;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 50%;
-  padding: 0 30% 0 30%;
-  color: #ffffff;
-  background-size: cover;
-  transform: skewX(18deg);
-  
-}
-
-.slider-page__title {
-  font-family: Minecraft, monospace;
-  margin-bottom: 1em;
-  font-size: 1em;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.slider-page__title--big {
-  font-family: Minecraft, monospace;
-  font-size: 1em;
-}
-
-.slider-page__description {
-  font-family: Minecraft, monospace;
-  font-size: 1em;
-  text-align: center;
-}
-
-.slider-page__link {
-  color: #80a1c1;
-}
-.slider-page__link:hover, .slider-page__link:focus {
-  color: #6386a9;
-  text-decoration: none;
-}
-
-/***********************
- * Project JS Styles
- **********************/
-.js-scrolling__page {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-.js-scrolling--active .slider-page {
-  transform: translateX(0) translateY(0) translateZ(0);
-}
-
-.js-scrolling--inactive .slider-page__content {
-  transform: skewX(18deg) scale(0.9);
-}
-
-.js-scrolling__page-1 .slider-page--left .slider-page__content {
-  background-image: url("imagenes/ZENIA_GALAXIA.png");
-  
-}
-.js-scrolling__page-1 .slider-page--right .slider-page__content {
-  background-color: #000000;
-}
-
-.js-scrolling__page-2 .slider-page--left .slider-page__content {
-  background-color: #e2e2e2;
-}
-.js-scrolling__page-2 .slider-page--left .slider-page__title,
-.js-scrolling__page-2 .slider-page--left .slider-page__description {
-  color: #000000;
-}
-.js-scrolling__page-2 .slider-page--right .slider-page__content {
-  background-image: url("imagenes/CARTEL_TO_THE_MOON.png");
-}
-
-.js-scrolling__page-3 .slider-page--left .slider-page__content {
-  background-image: url("imagenes/LISTADOS.png");
-}
-.js-scrolling__page-3 .slider-page--right .slider-page__content {
-  background-color: #000000;
-}
-
-
-
+.piedepagina {
+  font-size: 2px; /* Tamaño de fuente para el texto de derechos de autor */
+  position: relative; /* Fijar el pie de página */
+  bottom: 0; /* Alinear con el borde inferior */
+  left: 0; /* Alinear con el borde izquierdo */
+  width: 100%; /* Ocupar todo el ancho */
+  margin: 0; /* Eliminar márgenes */
+  padding: 0px; /* Añadir espacio interno */
+  background-color: #282828; /* Color de fondo */
+  color: #ffffff; /* Color del texto */
+  text-align: center; /* Alinear texto al centro */
+ }
  
 }
 
@@ -2606,3 +3550,4 @@ body {
   text-align: center; /* Alinear texto al centro */
  }
 }
+
