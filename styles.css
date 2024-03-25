@@ -30,7 +30,7 @@
     width: 100%;
     height: 100%;
     display: flex;
-    z-index: 0;
+    z-index: 4;
   }
   
   h1 {
@@ -480,7 +480,8 @@
   }
   
   .social-links {
-    z-index: 20;
+    float: left;
+    z-index: 99999;
     position: fixed;
     top: 30%;
     display: flex;
@@ -496,7 +497,7 @@
   }
   
   .social-link img {
-    z-index: 20;
+    z-index: 9999;
     width: 60px; /* Ajusta según el tamaño deseado */
     height: auto;
     border: 3px solid white;
@@ -803,8 +804,8 @@
       7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
     outline: none;
     z-index: 16;
-    top: 70%;
-    margin-left: -50%;
+    top: 75%;
+    margin-left: -70%;
     font-size: 10px;
     text-decoration: none;
   }
@@ -873,7 +874,7 @@
   
   /* Estilos para el contenedor de tarjetas */
   .cards {
-    margin-left: 10%;
+    margin-left: 40%;
     /* Tamaño de las tarjetas */
     height: 50%;
     width: 60%;
@@ -886,7 +887,7 @@
     text-align: center;
     /* Posicionamiento */
     position: absolute;
-    top: 15%;
+    top: 40%;
     left: 10%;
     transform: translate(-50%, -50%);
     /* Tamaño mínimo */
@@ -999,7 +1000,7 @@
   
   .social-links {
     transform: translateY(-50%); /* Centra verticalmente */
-    z-index: 20;
+    z-index: 9999;
     position: fixed;
     top: 540px; /* Ajusta según la posición deseada */
     display: flex;
@@ -1008,7 +1009,7 @@
   }
   
   .social-link {
-    z-index: 20; 
+    z-index: 99999; 
     margin-bottom: 30px; /* Elimina el margen inferior */
     margin-right: 30px;  /* Ajusta según el espaciado deseado entre los enlaces */
   }
@@ -1016,14 +1017,14 @@
   .social-link img {
     top: -100px;
     position: relative;
-    z-index: 20;
+    z-index: 99999;
     width: 30px; /* Ajusta según el tamaño deseado */
     height: auto;
     border: 3px solid white;
     border-radius: 50%; /* Borde circular */
   }
   .jefes img {
-    z-index: 15;
+    z-index: 2;
     position: absolute;
     top: 80%;
     left: 0;
@@ -1399,7 +1400,7 @@
   
   /* Estilos para el contenedor de tarjetas */
 .cards {
-  margin-left: 10%;
+  margin-left: 45%;
   /* Tamaño de las tarjetas */
   height: 50%;
   width: 70%;
@@ -1412,7 +1413,7 @@
   text-align: center;
   /* Posicionamiento */
   position: absolute;
-  top: 10%;
+  top: 40%;
   transform: translate(-50%, -50%);
   /* Tamaño mínimo */
   min-width: auto;
@@ -1545,7 +1546,7 @@
     border-radius: 50%; /* Borde circular */
   }
   .jefes img {
-    z-index: 15;
+    z-index: 2;
     position: absolute;
     top: 800px;
     left: 0;
@@ -1560,12 +1561,14 @@
 /* Sección del juego */
 
 #game {
-  
+  z-index: 1;
   position: relative;
   background: #000000;
   width: 100%;
   height: 100%;
   margin-top: 80%;
+  background-repeat: no-repeat;
+  
 }
 
 
@@ -2114,7 +2117,7 @@
 
 @media (min-width: 1024px) {
   #game {
-  
+  z-index: 1;
     position: relative;
     background: #000000;
     width: 100%;
@@ -2678,7 +2681,7 @@
     width: 100%;
     height: 100%;
     margin-top: 50%;
-  
+    z-index: 0;
   
   /* INFO GAME */ /* INFO GAME */ /* INFO GAME */ /* INFO GAME */ /* INFO GAME */ /* INFO GAME */ /* INFO GAME */ /* INFO GAME */ /* INFO GAME */ /* INFO GAME */ /* INFO GAME */ /* INFO GAME */
   
@@ -3249,7 +3252,7 @@
     margin-top: 150%;
     width: 100%;
     height: 100%;
-    
+    z-index: 0;
   }
   
   
@@ -4158,6 +4161,7 @@ text-align: center;
   background-color: #282828; /* Color de fondo */
   color: #ffffff; /* Color del texto */
   text-align: center; /* Alinear texto al centro */
+  z-index: 99999;
  }
  
 }
