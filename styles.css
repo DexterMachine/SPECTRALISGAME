@@ -1037,6 +1037,528 @@
 
 
 
+
+  /* max-width: 506px */  /* max-width: 506px */ /* max-width: 506px */ /* max-width: 506px */ /* max-width: 506px */ /* max-width: 506px */
+
+
+
+  @media (max-width: 506px) {
+    /* Estilos específicos para pantallas de celular */
+  
+    /* Contenedor general */
+    body {
+      background-color: #000;
+      
+    }
+    
+    .contenido-presale, #presale {
+      background-image: url(imagenes/FONDOPRESALE.png);
+      background-size: cover; /* Para que la imagen cubra todo el contenedor */
+      background-repeat: no-repeat; /* Para que la imagen no se repita */
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; /* Altura específica de 1024px */
+      display: flex;
+      z-index: 4;
+    }
+    
+    h1 {
+      font-family: Minecraft, monospace;
+      /* Gradient for background color */
+      background: linear-gradient(to right, #e91e63, #9b59b6);
+    
+      /* Apply gradient to text */
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    
+      /* Blend text and background */
+      mix-blend-mode: difference;
+    
+      /* Rest of your styles */
+      margin-top: 10px;
+      font-size: 30px;
+      font-weight: 600;
+      letter-spacing: -1px;
+      margin-bottom: 10px;
+      transform: translateZ(35px);
+      text-align: center;
+      line-height: 1.2; /* Ajuste el valor según sea necesario */
+    }
+    
+    p {
+      font-family: Minecraft, monospace;
+      font-weight: 300;
+      text-align: center;
+      font-size: 18px;
+    }
+    
+    /* Contenedor general para la barra superior */
+    
+    .header-bar {
+      display: flex; /* Convertirlo en un contenedor flexbox */
+      align-items: center; /* Alinear contenido verticalmente */
+      justify-content: space-between; /* Distribuir contenido horizontalmente con espacio entre elementos */
+      background-color: rgba(0, 0, 0, 0.4); /* Fondo semitransparente */
+      padding: 1px 2px; /* Agregar algo de margen */
+      position: fixed; /* Fijar la barra en la parte superior de la página */
+      top: 0;
+      left: 0; /* Extender de izquierda a derecha */
+      width: 100%; /* Ocupar todo el ancho */
+      z-index: 17; /* Asegurar que esté encima de otros elementos */
+      backdrop-filter: blur(10px); /* Agregar un desenfoque */
+      height: 5%;
+      max-width: 506px;
+    }
+    
+    
+    /* Estilos del menú hamburguesa */
+    #menuToggle {
+      position: absolute;
+      top: 60%;
+      left: 10px;
+      transform: translateY(-50%);
+      z-index: 1;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+    
+    #menuToggle a {
+      text-decoration: none;
+      color: rgb(247, 247, 247);
+    
+      transition: color 0.3s ease;
+    }
+    
+    #menuToggle a:hover {
+      color: tomato;
+    }
+    
+    #menuToggle input {
+      display: block;
+      width: 10px;
+      height: 1px;
+      position: absolute;
+      top: -5px;
+      left: -4px;
+    
+      cursor: pointer;
+    
+      opacity: 0; /* hide this */
+      z-index: 2; /* and place it over the hamburger */
+    
+      -webkit-touch-callout: none;
+    }
+    
+    /*
+     * Just a quick hamburger
+     */
+    #menuToggle span {
+      display: block;
+      width: 20px;
+      height: 2px;
+      margin-bottom: 7px;
+      position: relative;
+    
+      background: rgb(255, 255, 255);
+      border-radius: 3px;
+    
+      z-index: 1;
+    
+      transform-origin: 4px 0px;
+    
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+    }
+    
+    #menuToggle span:first-child {
+      transform-origin: 0% 0%;
+    }
+    
+    #menuToggle span:nth-last-child(2) {
+      transform-origin: 0% 100%;
+      background: #ffffff;
+    }
+    
+    /* 
+     * Transform all the slices of hamburger
+     * into a crossmark.
+     */
+    #menuToggle input:checked ~ span {
+      opacity: 1;
+      transform: rotate(45deg) translate(-2px, -1px);
+      background: #232323;
+    }
+    
+    /*
+     * But let's hide the middle one.
+     */
+    #menuToggle input:checked ~ span:nth-last-child(3) {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    
+    /*
+     * Ohyeah and the last one should go the other direction
+     */
+    #menuToggle input:checked ~ span:nth-last-child(2) {
+      transform: rotate(-45deg) translate(0, -1px);
+    }
+    
+    /*
+     * Make this absolute positioned
+     * at the top left of the screen
+     */
+    
+    #menu {
+      position: absolute;
+      width: 50px;
+      margin: -100px 0 0 -50px;
+      padding: 50px;
+      padding-top: 125px;
+    
+      list-style-type: none;
+      -webkit-font-smoothing: antialiased;
+      /* to stop flickering of text in safari */
+    
+      transform-origin: 0% 0%;
+      transform: translate(-100%, 0);
+    
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    }
+    
+    #menu li {
+      padding: 10px 0;
+      font-size: 18px;
+    }
+    
+    /*
+     * And let's slide it in from the left
+     */
+    #menuToggle input:checked ~ ul {
+      transform: none;
+    }
+    
+    /* Add Spectralis image */
+    img.spectralis {
+     
+      position: relative; /* Removed fixed positioning */
+      margin: 0 auto; /* Center the image horizontally */
+      left: 10%;
+      width: 40%; /* Reducción del ancho de la imagen */
+      max-width: 200px; /* Establecer un ancho máximo */
+    }
+    
+    .custom-btn {
+      width: 2%;
+      height: 1%;
+      color: #fff;
+      border-radius: 5px;
+      padding: 10px 5px;
+      font-family: Minecraft, monospace;
+      font-weight: 1000;
+      background: transparent;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+        7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+      outline: none;
+      line-height: 50px;
+      font-size: 10px;
+    }
+    
+    .btn-5 {
+      font-size: 10px;
+      width: 100px;
+      height: 30px;
+      line-height: 35px;
+      padding: 0;
+      border: none;
+      /* New gradient for initial look */
+      background: linear-gradient(to right, #d61455, #9c27b0);
+      margin-right: 10px;
+    }
+    
+    .btn-5:hover {
+      color: #f0094a;
+      background: transparent;
+      box-shadow: none;
+    }
+    
+    .btn-5:before,
+    .btn-5:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 2px;
+      width: 0;
+      background: #ff02ff;
+      box-shadow: none; /* Remove box-shadow for cleaner look */
+      transition: 400ms ease all;
+    }
+    
+    .btn-5:after {
+      right: inherit;
+      top: inherit;
+      left: 0;
+      bottom: 0;
+    }
+    
+    .btn-5:hover:before,
+    .btn-5:hover:after {
+      width: 100%;
+      transition: 800ms ease all;
+    }
+    
+    .custom-btn-papi {
+      transform: translateY(-50%);
+      left: 210%;
+      width: auto;
+      max-width: 506px;
+      height: 3%;
+      color: #fff;
+      border-radius: 4px;
+      padding: 0px 0px;
+      font-family: Minecraft, monospace;
+      font-weight: 100px;
+      background: transparent;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      display: inline-block;
+      box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+        7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+      outline: none;
+      z-index: 100;
+      margin-top: 90%;
+      font-size: 10px;
+      text-decoration: none;
+    }
+    
+    .btn-6 {
+      background: rgb(247, 150, 192);
+      background: radial-gradient(
+        circle,
+        rgba(247, 150, 192, 1) 0%,
+        rgba(118, 174, 241, 1) 100%
+      );
+      line-height: 58px;
+    }
+    
+    .btn-6 span {
+      top: -4px;
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 15%;
+      text-align: center;
+    }
+    
+    .btn-6:before,
+    .btn-6:after {
+      position: absolute;
+      content: "";
+      height: 50%;
+      width: 1px;
+      box-shadow: none;
+    }
+    
+    .btn-6:hover {
+      background: linear-gradient(
+        to bottom,
+        rgba(80, 76, 159, 0.8),
+        rgba(230, 25, 75, 0.8),
+        rgba(255, 105, 180, 0.8)
+      );
+      color: #fff;
+      box-shadow: none;
+    }
+    
+    .btn-6:hover:before {
+      transition: all 500ms ease;
+      height: 80%;
+    }
+    
+    .btn-6:hover:after {
+      transition: all 500ms ease;
+      height: 80%;
+    }
+    
+    .btn-6 span:before,
+    .btn-6 span:after {
+      position: absolute;
+      content: "";
+      box-shadow: none;
+    }
+    
+    .btn-6 span:hover:before {
+      width: 100%;
+    }
+    
+    .btn-6 span:hover:after {
+      width: 100%;
+    }
+    
+    /* Estilos para el contenedor de tarjetas */
+  .cards {
+    margin-right: 10px;
+    /* Tamaño de las tarjetas */
+    height: 50%;
+    width: 70%;
+    /* Fondo y borde de las tarjetas */
+    background: #000;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px 20px rgba(0, 0, 0, 0.17);
+    /* Alineación y perspectiva */
+    display: inline-block;
+    text-align: center;
+    /* Posicionamiento */
+    position: absolute;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    /* Espaciado interno */
+    padding: 5px;
+  }
+  
+  /* Estilos para cada tarjeta individual */
+  .card {
+    /* Tamaño y margen */
+    height: 20%;
+    width: 80%;
+    margin: 8px;
+    /* Fondo, borde y sombra */
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.6);
+    /* Posicionamiento */
+    position: relative;
+    /* Transición suave */
+    transition: transform 200ms ease-out;
+    /* Alineación del contenido */
+    text-align: center;
+    /* Espaciado y margen */
+    padding: 10px;
+    margin-bottom: 0px;
+  }
+  
+  /* Estilos para las imágenes dentro de las tarjetas */
+  .card__img {
+    /* Posicionamiento */
+    position: relative;
+    /* Tamaño */
+    height: 90%;
+  }
+  
+  /* Estilos para el fondo de las tarjetas */
+  .card__bg {
+    /* Posicionamiento */
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    bottom: -50px;
+    left: -50px;
+    /* Apariencia y transformación */
+    background: url("https://i.ibb.co/s3PphsR/Vortice2.png") center / cover no-repeat;
+    /* Capa z */
+    z-index: 0;
+  }
+  
+  /* Estilos específicos para la primera tarjeta */
+  .card__one .card__img {
+    /* Posicionamiento */
+    top: 8px;
+    /* Tamaño */
+    height: 80%;
+  }
+  
+  /* Estilos específicos para la segunda tarjeta */
+  .card__two .card__img {
+    /* Posicionamiento */
+    top: 7px;
+    margin-left: -20px;
+    /* Tamaño */
+    height: 80%;
+  }
+  
+  /* Estilos específicos para la tercera tarjeta */
+  .card__three .card__img {
+    /* Posicionamiento */
+    top: 6px;
+    height: 80%;
+     
+  }
+  
+  /* Estilos para el texto dentro de las tarjetas */
+  .card__text {
+    font-family: Minecraft, monospace;
+    /* Posicionamiento */
+    position: absolute;
+    bottom: 0;
+    
+    /* Alineación y espaciado */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Tamaño */
+    height: 100px;
+    width: 100%;
+    /* Capa z */
+    z-index: 2;
+  }
+  
+  /* Estilos para el título del texto dentro de las tarjetas */
+  .card__title {
+    /* Apariencia y tamaño del texto */
+    font-family: Minecraft, monospace;
+    color: white;
+    font-size: 10px;
+    font-weight: 900;
+    padding: 0 10px;
+    margin-top: 80px;
+    margin-bottom: 3px;
+    justify-content: center;
+  
+  }
+    
+    .social-links {
+      transform: translateY(-50%); /* Centra verticalmente */
+      z-index: 20;
+      position: fixed;
+      top: 540px; /* Ajusta según la posición deseada */
+      display: flex;
+      flex-direction: column;
+      left: 10px;  /* Ajusta según la posición deseada */ 
+    }
+    
+    .social-link {
+      z-index: 20; 
+      margin-bottom: 30px; /* Elimina el margen inferior */
+      margin-right: 30px;  /* Ajusta según el espaciado deseado entre los enlaces */
+    }
+    
+    .social-link img {
+      top: -100px;
+      position: relative;
+      z-index: 20;
+      width: 30px; /* Ajusta según el tamaño deseado */
+      height: auto;
+      border: 3px solid white;
+      border-radius: 50%; /* Borde circular */
+    }
+    .jefes img {
+      
+      z-index: 5;
+      position: absolute;
+      margin-top: 10%;
+      left: 0;
+      width: 100%;
+    } 
+  }
+
+
+
 /* max-width: 768px */ /* max-width: 768px */  /* max-width: 768px */  /* max-width: 768px */  /* max-width: 768px */  /* max-width: 768px */  /* max-width: 768px */  /* max-width: 768px */ 
 
 
@@ -3242,6 +3764,395 @@
 
 
 
+/* 506p */ /* 506p */ /* 506p */ /* 506p */ /* 506p *//* 506p */ /* 506p */ /* 506p */ /* 506p */
+@media (max-width: 506px) {
+
+  #game {
+    
+    overflow: hidden; /* Oculta el borde blanco */
+    position: relative;
+    background: #000000;
+    margin-top: 100%;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  
+  
+  /* INFO GAME */ /* INFO GAME */ /* INFO GAME */ /* INFO GAME */ /* INFO GAME */ /* INFO GAME */ /* INFO GAME */ /* INFO GAME */ /* INFO GAME */ /* INFO GAME */ /* INFO GAME */ /* INFO GAME */
+  
+  
+  .game-image-informacion {
+    margin-right: 100px;
+    margin-top: 30px;
+    float: center;
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+    animation: float 1s infinite alternate; 
+    z-index: 1000;
+  }
+  
+  
+  
+  
+  .game-info-informacion {
+    flex: 1; /* Permite que el texto ocupe el espacio restante */
+    text-align: center;
+    margin-top: 130%;
+    margin-right: 70%;
+    margin-left: 13%;
+    width:80%;
+  }
+  
+  .game-info-informacion h2 {
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(255, 20, 147);
+    font-family: Minecraft, monospace;
+    
+  }
+  
+  .game-info-informacion p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+    font-family: Minecraft, monospace;
+  }
+  
+ /* LAND */
+  
+ .game-section-land {
+  margin-top: 200px;
+  display: flex; /* Permite que el video y el texto estén uno al lado del otro */
+  margin-bottom: 100px;
+  padding: 20px;
+  border-radius: 10px;
+  align-items: center;
+  flex-direction: column; /* Cambia la dirección del flexbox a columna */
+}
+
+/* GIF */
+
+.gif-land {
+  margin-top: 30%;
+  width: 80%; /* Ajusta el ancho del video según el diseño de la imagen */
+  height: auto; /* Se ajustará automáticamente según el ancho especificado */
+  margin-right: 50px; /* Espacio entre el video y el texto */
+  border: 10px solid rgb(255, 20, 147);
+  margin-left: 50px;
+}
+
+/* Información */
+
+.game-info-land {
+  flex: 1; /* Permite que el texto ocupe el espacio restante */
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 30px;
+  width: 80%;
+}
+
+.game-info-land h2 {
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: rgb(255, 20, 147);
+  font-family: Minecraft, monospace;
+}
+
+.game-info-land p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: white;
+  font-family: Minecraft, monospace;
+}
+
+
+
+  
+  /* Secciones */
+  
+  .game-section-clan {
+    margin-left: 10%;
+    margin-top: 0px;
+    display: flex; /* Permite que el video y el texto estén uno al lado del otro */
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: left;
+    flex-direction: column; /* Cambia la dirección del flexbox a columna */
+  }
+  
+  /* Video */
+  
+  .gif-clan {
+    margin-top: 30px;
+    width: 80%; /* Ajusta el ancho del video según el diseño de la imagen */
+    height: auto; /* Se ajustará automáticamente según el ancho especificado */
+    margin-right: 130px; /* Espacio entre el video y el texto */
+    border: 10px solid rgb(255, 20, 147);
+  }
+  
+  /* Información */
+  
+  .game-info-clan {
+    flex: 1; /* Permite que el texto ocupe el espacio restante */
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 20%;
+    width: 80%;
+    margin-bottom: 30px;
+  }
+  
+  .game-info-clan h2 {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(255, 20, 147);
+    font-family: Minecraft, monospace;
+    text-align: center;
+  }
+  
+  .game-info-clan p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+    font-family: Minecraft, monospace;
+  }
+  
+ 
+  
+  /* PERSONAJE */ /* PERSONAJE */ /* PERSONAJE */ /* PERSONAJE */ /* PERSONAJE */ /* PERSONAJE */
+  
+  /* Secciones */
+  
+/* Sección Personaje */
+.game-section-rubia {
+ 
+  display: flex; /* Permite que la imagen y el texto estén uno al lado del otro */
+  margin-bottom: 0px;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0px;
+  flex-direction: column;
+  
+}
+
+/* Imagen */
+
+.game-image-rubia {
+  
+  margin-left: 10%;
+  transform: rotate(0deg);
+  width: 80%;;
+  margin-right: 0px;
+  /* Ajusta el borde y el color */
+  border: solid 10px rgb(255, 20, 147); /* Ajusta el grosor como desees */
+}
+
+.game-info-rubia {
+  flex: 1; /* Permite que el texto ocupe el espacio restante */
+  text-align: center;
+  margin-top: -120px;
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 100px;
+}
+
+.game-info-rubia h2 {
+  margin-top: 0px;
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: rgb(255, 20, 147);
+  font-family: Minecraft, monospace;
+}
+
+.game-info-rubia p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: white;
+  font-family: Minecraft, monospace;
+  margin-bottom: 100px;
+}
+
+  /* Ajustes para pantallas pequeñas */
+  
+  /* CHAT */ /* CHAT */ /* CHAT */ /* CHAT */ /* CHAT */ /* CHAT */ /* CHAT */ /* CHAT */ /* CHAT */
+  
+  /* Secciones */
+  
+  .game-section-chat {
+    top: 100px;
+    display: flex; /* Permite que la imagen y el texto estén uno al lado del otro */
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px;
+    flex-direction: column;
+    
+  }
+  
+  /* Imagen */
+  
+  .game-image-chat {
+    
+    margin-left: 1%;
+    transform: rotate(0deg);
+    width: 100%;;
+    /* Ajusta el borde y el color */
+    border: solid 10px rgb(255, 20, 147); /* Ajusta el grosor como desees */
+  }
+  
+  .game-info-chat {
+    flex: 1; /* Permite que el texto ocupe el espacio restante */
+    text-align: center;
+    margin-top: 10px;
+    width: 80%;
+    margin-left: 15%;
+    margin-bottom: 0px;
+  }
+  
+  .game-info-chat h2 {
+    margin-top: 20px;
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(255, 20, 147);
+    font-family: Minecraft, monospace;
+  }
+  
+  .game-info-chat p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+    font-family: Minecraft, monospace;
+  }
+  
+  /* Ajustes para pantallas pequeñas */
+  
+  /* Secciones */
+
+
+  
+  .game-section-marketplace {
+    top: -150px;
+    display: flex; /* Permite que la imagen y el texto estén uno al lado del otro */
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px;
+    flex-direction: column;
+    
+  }
+  
+  /* Imagen */
+  
+  .game-image-marketplace {
+    
+    margin-left: 1%;
+    transform: rotate(0deg);
+    width: 100%;;
+    /* Ajusta el borde y el color */
+    border: solid 10px rgb(255, 20, 147); /* Ajusta el grosor como desees */
+  }
+  
+  .game-info-marketplace {
+    text-align: center;
+    flex: 1; /* Permite que el texto ocupe el espacio restante */
+    margin-top: -140px;
+    width: 80%;
+    margin-left: 5%;
+  }
+  
+  .game-info-marketplace h2 {
+    margin-top: 20px;
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(255, 20, 147);
+    font-family: Minecraft, monospace;
+  }
+  
+  .game-info-marketplace p {
+    margin-left: 10%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+    font-family: Minecraft, monospace;
+    margin-bottom: 100px;
+  }
+  
+  
+  .game-image-pet-gato1 {
+    margin-left: 8%;
+    margin-top: 40px;
+    float: left;
+    width: 6%;
+    height: 40%;
+    background-repeat: no-repeat;
+    animation: float 1s infinite alternate; 
+    z-index: 100;
+  }
+
+  
+  
+  
+  
+  .game-image-pet-gato2 {
+    margin-right: 26px;
+    margin-top: 20px;
+    float: right;
+    width: 6%;
+    background-repeat: no-repeat;
+    animation: float 1s infinite alternate; 
+    z-index: 100;
+  }
+  
+  
+  
+  .game-info-pet {
+    flex: 1; /* Permite que el texto ocupe el espacio restante */
+    text-align: center;
+    margin-left: 15%;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    width: 70%;
+  }
+  
+  .game-info-pet h2 {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(255, 20, 147);
+    font-family: Minecraft, monospace;
+    text-align: center;
+    /* Utilizamos text-shadow para simular un borde amarillo alrededor del texto */
+    text-shadow: 
+      -2px -1px 0 white,  
+       2px -1px 0 white,
+      -2px  1px 0 white,
+       2px  1px 0 white;
+  }
+  
+  
+  
+  .game-info-pet p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+    font-family: Minecraft, monospace;
+  }
+}
+
+
+
+
 /* 412p */ /* 412p */ /* 412p */ /* 412p */ /* 412p */ /* 412p */
  
 
@@ -3828,6 +4739,68 @@ text-align: center;
 
   
 }
+
+@media (max-width: 506px) {
+
+  /* IMAGENES */ /* IMAGENES */ /* IMAGENES *//* IMAGENES */ /* IMAGENES */ /* IMAGENES */ /* IMAGENES */ /* IMAGENES */ /* IMAGENES */ /* IMAGENES */
+ 
+ 
+ /* Estilos CSS para centrar el texto y la imagen */
+ #imageneszenia {
+   margin-top: 20%;
+   margin-left: 15%;
+   display: flex;
+   justify-content: center;
+   height: 100vh; /* Establece la altura del contenedor */
+   width: 100%;
+ }
+ 
+ .imageneszenia-section {
+   
+   position: relative;
+   display: inline-block;
+ }
+ 
+ .image-container {
+   
+   height: 60%;
+   position: relative;
+   display: inline-block;
+ }
+ .text-container {
+   text-align: center;
+   position: absolute;
+   top: -20%; /* Posiciona el texto en la mitad superior */
+   margin-left: 10%;
+   z-index: 1; /* Posiciona el texto sobre la imagen */
+   padding: 20px;
+   border-radius: 10px;
+ }
+ .coming-soon {
+   margin-bottom: 0px;
+   font-size: 34px;
+   z-index: 100;
+   position: relative;
+   margin-top: 150%;
+   left: -225%; /* Ajusta la posición si es necesario */
+   transform: translate(-50%, -50%);
+   /* Propiedades adicionales para el texto */
+   color: transparent; /* Elimina el color de texto original */
+   -webkit-text-fill-color: transparent; /* Compatibilidad con navegadores webkit */
+   text-shadow: 
+     -1px -1px 0 #ff2093, /* Sombra interna rosa fuerte */
+      1px 1px 0 #00bcd4; /* Sombra interna azul celeste */
+ }
+ 
+ .merch {
+   margin-top: 50%;
+   width: 100%;
+   height: 40%;
+   display: block;
+   margin: auto;
+ }
+ 
+ }
 
 
 @media only screen and (max-width: 412px) {
