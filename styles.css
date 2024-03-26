@@ -1109,6 +1109,7 @@
     width: 100%; /* Ocupar todo el ancho */
     z-index: 17; /* Asegurar que esté encima de otros elementos */
     backdrop-filter: blur(10px); /* Agregar un desenfoque */
+    min-width: 412px;
   }
   
   
