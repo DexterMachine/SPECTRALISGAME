@@ -1109,6 +1109,7 @@
     z-index: 17; /* Asegurar que esté encima de otros elementos */
     backdrop-filter: blur(10px); /* Agregar un desenfoque */
     height: 5%;
+    min-width: 412px;
   }
   
   
