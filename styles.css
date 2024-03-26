@@ -584,6 +584,7 @@
     top: 0;
     left: 0; /* Extender de izquierda a derecha */
     width: 100%; /* Ocupar todo el ancho */
+    max-width: 412px;
     z-index: 17; /* Asegurar que esté encima de otros elementos */
     backdrop-filter: blur(10px); /* Agregar un desenfoque */
   }
