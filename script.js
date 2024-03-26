@@ -333,3 +333,8 @@ document.querySelector('#contact-form').addEventListener('submit', (e) => {
 
 
 
+if (window.innerWidth <= 412) {
+  document.querySelectorAll(".holograma").forEach(function(element) {
+    element.style.display = "none";
+  });
+}
