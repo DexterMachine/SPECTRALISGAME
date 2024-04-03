@@ -30,7 +30,7 @@
     width: 100%;
     height: 100%;
     display: flex;
-    z-index: 4;
+    z-index: 1;
   }
   
   h1 {
@@ -46,7 +46,7 @@
     mix-blend-mode: difference;
   
     /* Rest of your styles */
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 800;
     letter-spacing: -1px;
     margin-bottom: 30px;
@@ -211,7 +211,7 @@
   img.spectralis {
     position: relative; /* Removed fixed positioning */
     margin: 0 auto; /* Center the image horizontally */
-    left: 4%;
+    left: 5.8%;
     height: 100%;
   }
   
@@ -291,8 +291,8 @@
       7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
     outline: none;
     z-index: 160;
-    top: 75%;
-    left: 310%;
+    top: 10%;
+    left: 300%;
     font-size: 30px;
     text-decoration: none;
   }
@@ -371,7 +371,7 @@
     transform-style: preserve-3d;
     transform: rotateX(11deg) rotateY(16.5deg);
     position: absolute;
-    top: 10%;
+    top:20%;
     left: 18%;
     transform: translate(-50%, -50%);
     width: 60%;
@@ -482,29 +482,29 @@
   .social-links {
     float: left;
     z-index: 99999;
-    position: fixed;
-    top: 30%;
+    position: absolute;
+    top: 21%;
     display: flex;
     flex-direction: column;
-    left: 1%;
+    left: 14%;
     
     
   }
   
   .social-link {
-    z-index: 20;
+    z-index: 999999;
     margin-bottom: 40px;
   }
   
   .social-link img {
-    z-index: 9999;
+    z-index: 999999;
     width: 60px; /* Ajusta según el tamaño deseado */
     height: auto;
     border: 3px solid white;
     border-radius: 50%; /* Borde circular */
   }
   .jefes img {
-    z-index: 0;
+    z-index: 2;
     position: absolute;
     top: 50%;
     left: 0;
@@ -2112,7 +2112,7 @@
 
 
 .holo-zenia {
-  margin-top: -7%;
+  margin-top: -13%;
   left: 81.5%;
   float: right;
   position: absolute;
@@ -2454,21 +2454,21 @@
 
 
 .game-image-pet-gato1 {
-  margin-left: 110px;
+  margin-left: 20px;
   margin-top: 120px;
   float: left;
   width: 6%;
   height: 40%;
   background-repeat: no-repeat;
   animation: float 1s infinite alternate; 
-  z-index: 100;
+  z-index: 4;
 }
  
 
 
 .teleport-pet-gato1 {
-  margin-left: 4.2%;
-  top: 102.2%;
+  left: -2%;
+  margin-top: 5%;
   float: left;
   position: absolute;
   z-index: 2;
@@ -2515,20 +2515,20 @@
 
 .game-image-pet-gato2 {
   margin-right: 120px;
-  margin-top: 30px;
+  margin-top: 20%;
   float: right;
   width: 6%;
   background-repeat: no-repeat;
   animation: float 1s infinite alternate; 
-  z-index: 100;
+  z-index: 4;
 }
 
  
 
 
 .teleport-pet-gato2 {
-  top: 102.2%;
-  right: 4.5%;
+  margin-top: 7%;
+  margin-right: -2.5%;
   float: right;
   position: absolute;
   z-index: 2;
