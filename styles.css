@@ -291,7 +291,7 @@
       7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
     outline: none;
     z-index: 160;
-    top: 10%;
+    top: 90%;
     left: 300%;
     font-size: 30px;
     text-decoration: none;
@@ -482,11 +482,11 @@
   .social-links {
     float: left;
     z-index: 99999;
-    position: absolute;
-    top: 21%;
+    position: fixed;
+    top: 30%;
     display: flex;
     flex-direction: column;
-    left: 14%;
+    left:1%;
     
     
   }
