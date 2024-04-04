@@ -88,7 +88,7 @@
 
 
 <div class="buttons">
-  <a href="SPECTRALIS_WHITE_PAPER.pdf" download="SPECTRALIS_WHITE_PAPER.pdf" class="custom-btn-papi btn-6">
+  <a href="https://es.scribd.com/document/720115532/Spectralis-White-Paper" download="https://es.scribd.com/document/720115532/Spectralis-White-Paper" target="_blank" class="custom-btn-papi btn-6">
     <span>White Paper</span>
   </a>
 </div>
@@ -199,7 +199,13 @@
 <h1 class="piedepagina" style="text-align: center;">© Copyright 2024 Spectralis. All Rights Reserved.</h1>
     
     
+<script>
+  const downloadBtn = document.querySelector('.buttons a');
 
+  downloadBtn.addEventListener('click', () => {
+    window.open('SPECTRALIS_WHITE_PAPER.pdf', '_blank');
+  });
+</script>
 <script src="script.js" defer></script>
 
 </body>
