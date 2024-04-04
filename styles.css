@@ -274,92 +274,7 @@
     transition: 800ms ease all;
   }
   
-  .custom-btn-papi {
-    width: 100%;
-    height: 4%;
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px 25px;
-    font-family: Minecraft, monospace;
-    font-weight: 300;
-    background: transparent;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
-      7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
-    outline: none;
-    z-index: 160;
-    top: 90%;
-    left: 300%;
-    font-size: 30px;
-    text-decoration: none;
-  }
   
-  .btn-6 {
-    background: rgb(247, 150, 192);
-    background: radial-gradient(
-      circle,
-      rgba(247, 150, 192, 1) 0%,
-      rgba(118, 174, 241, 1) 100%
-    );
-    line-height: 58px;
-  }
-  
-  .btn-6 span {
-    top: -15%;
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-  }
-  
-  .btn-6:before,
-  .btn-6:after {
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: 1px;
-    box-shadow: none;
-  }
-  
-  .btn-6:hover {
-    background: linear-gradient(
-      to bottom,
-      rgba(80, 76, 159, 0.8),
-      rgba(230, 25, 75, 0.8),
-      rgba(255, 105, 180, 0.8)
-    );
-    color: #fff;
-    box-shadow: none;
-  }
-  
-  .btn-6:hover:before {
-    transition: all 500ms ease;
-    height: 100%;
-  }
-  
-  .btn-6:hover:after {
-    transition: all 500ms ease;
-    height: 100%;
-  }
-  
-  .btn-6 span:before,
-  .btn-6 span:after {
-    position: absolute;
-    content: "";
-    box-shadow: none;
-  }
-  
-  .btn-6 span:hover:before {
-    width: 100%;
-  }
-  
-  .btn-6 span:hover:after {
-    width: 100%;
-  }
   
   .cards {
     background: #000;
@@ -371,7 +286,7 @@
     transform-style: preserve-3d;
     transform: rotateX(11deg) rotateY(16.5deg);
     position: absolute;
-    top:20%;
+    top:10%;
     left: 18%;
     transform: translate(-50%, -50%);
     width: 60%;
@@ -479,6 +394,7 @@
     margin-top: 0px;
   }
   
+  
   .social-links {
     float: left;
     z-index: 99999;
@@ -512,6 +428,93 @@
     height:  auto;
   }
 
+  .custom-btn-papi {
+    width: 10%;
+    height: 30px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: Minecraft, monospace;
+    font-weight: 300;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+      7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    outline: none;
+    z-index: 9999;
+    margin-top: 35%;
+    left: 43%;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .btn-6 {
+    background: rgb(247, 150, 192);
+    background: radial-gradient(
+      circle,
+      rgba(247, 150, 192, 1) 0%,
+      rgba(118, 174, 241, 1) 100%
+    );
+    line-height: 58px;
+  }
+  
+  .btn-6 span {
+    z-index: 999;
+    top: -30%;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  
+  .btn-6:before,
+  .btn-6:after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 1px;
+    box-shadow: none;
+  }
+  
+  .btn-6:hover {
+    background: linear-gradient(
+      to bottom,
+      rgba(80, 76, 159, 0.8),
+      rgba(230, 25, 75, 0.8),
+      rgba(255, 105, 180, 0.8)
+    );
+    color: #fff;
+    box-shadow: none;
+  }
+  
+  .btn-6:hover:before {
+    transition: all 500ms ease;
+    height: 100%;
+  }
+  
+  .btn-6:hover:after {
+    transition: all 500ms ease;
+    height: 100%;
+  }
+  
+  .btn-6 span:before,
+  .btn-6 span:after {
+    position: absolute;
+    content: "";
+    box-shadow: none;
+  }
+  
+  .btn-6 span:hover:before {
+    width: 100%;
+  }
+  
+  .btn-6 span:hover:after {
+    width: 100%;
+  }
 
   @media (max-width:1600px) {
     /* Estilos generales */
