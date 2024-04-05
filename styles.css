@@ -3745,9 +3745,7 @@
 
 
 
-@media only screen and (device-width: 414px) and (device-height: 896px) {
-  /* Estilos específicos para el iPhone  */
-}
+@media only screen and (max-width: 414px) {
 
   #game {
     
