@@ -1564,7 +1564,7 @@
 
 
 
-  @media only screen and (device-width: 414px) {
+  @media only screen and (device-width: 414px) and (device-height: 896px) {
   /* Estilos específicos para pantallas de celular */
 
   /* Contenedor general */
@@ -3749,7 +3749,7 @@
 
 
 
-@media only screen and (device-width: 414px)  {
+@media only screen and (device-width: 414px) and (device-height: 896px) {
 
   #game {
     
@@ -4507,7 +4507,7 @@ text-align: center;
   
 }
 
-@media (max-width: 414px) {
+@media (max-width: 414px) and (device-height: 896px) {
 
   /* IMAGENES */ /* IMAGENES */ /* IMAGENES *//* IMAGENES */ /* IMAGENES */ /* IMAGENES */ /* IMAGENES */ /* IMAGENES */ /* IMAGENES */ /* IMAGENES */
  
@@ -4597,7 +4597,7 @@ text-align: center;
   margin: 0;
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 414px) and (device-height: 896px) {
   #token {
     height: 100%;
     width: 100%;
@@ -4671,7 +4671,7 @@ text-align: center;
  }
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 414px) and (device-height: 896px) {
   /* Estilos específicos para pantallas de celular */
 .piedepagina {
   font-size: 9px; /* Tamaño de fuente para el texto de derechos de autor */
