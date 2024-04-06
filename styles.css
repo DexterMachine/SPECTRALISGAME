@@ -4222,7 +4222,7 @@
     left: -10px;
     right: -10px;
     content: "";
-    height: 5px;
+    height: 10px;
     background-color: rgb(255, 20, 147);
     border-radius: 100%;
     filter: blur(2.5px);
