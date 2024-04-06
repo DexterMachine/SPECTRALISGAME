@@ -1560,7 +1560,7 @@
 
 
 
-@media (max-width: 414px) {
+  @media only screen and (device-width: 414px) and (device-height: 896px) {
   /* Estilos específicos para pantallas de celular */
 
   /* Contenedor general */
@@ -1833,7 +1833,7 @@
   
   .custom-btn-papi {
     transform: translateY(-50%);
-    left: 42%;
+    left: 38%;
     width: 100px;
     max-width: 412px;
     height: 30px;
@@ -1923,9 +1923,9 @@
   
   /* Estilos para el contenedor de tarjetas */
 .cards {
-  margin-left: 34%;
+  margin-left: 28%;
   /* Tamaño de las tarjetas */
-  height: 55%;
+  height: 60%;
   width: 60%;
   /* Fondo y borde de las tarjetas */
   background: #000;
@@ -3745,7 +3745,7 @@
 
 
 
-@media only screen and (max-width: 414px) {
+@media only screen and (device-width: 414px) and (device-height: 896px) {
 
   #game {
     
@@ -4150,12 +4150,12 @@
   
   
   .teleport-pet-gato1 {
-    margin-left: 4.4%;
-    top: 98.3%;
+    margin-left: 11%;
+    top: 97.5%;
     float: left;
     position: absolute;
     z-index: 2;
-    width: 40px;
+    width: 10px;
     height: 2px;
     background-color: rgb(255, 20, 147);
     border-radius: 100%;
@@ -4201,12 +4201,12 @@
   
   
   .teleport-pet-gato2 {
-    top: 98.3%;
-    right: 4%;
+    top: 97.3%;
+    right: 8%;
     float: right;
     position: absolute;
     z-index: 2;
-    width: 5%;
+    width: 2%;
     height: 5px;
     background-color: rgb(255, 20, 147);
     border-radius: 100%;
@@ -4222,7 +4222,7 @@
     left: -10px;
     right: -10px;
     content: "";
-    height: 10px;
+    height: 5px;
     background-color: rgb(255, 20, 147);
     border-radius: 100%;
     filter: blur(2.5px);
